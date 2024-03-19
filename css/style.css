@@ -3,13 +3,13 @@ h1, img{
     vertical-align: middle;
 }
 main{
-    background-color: gray;
+    background-color: lightgray;
 }
 .container{
     
     padding-top: 30px;
     margin-left: 15%;
-    height: 700px;
+    height: 900px;
     width: 70%;
 }
 .container1{
@@ -55,5 +55,46 @@ main{
 }
 li{
     list-style-type: none;
+    padding: 15px;
+}
+.color-purple{
+    background-color: rgb(128, 47, 204);
+    padding: 5px;
+    color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    display: inline-block;
+}
+.color-lightgreen{
+    background-color: rgb(3, 196, 196);
+    padding: 5px;
+    color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    display: inline-block;
+}
+.color-orange{
+    background-color: orange;
+    padding: 5px;
+    color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    display: inline-block;
+}
+.color-fuxia{
+    background-color: fuchsia;
+    padding: 5px;
+    color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    display: inline-block;
+}
+.color-green{
+    background-color: rgb(44, 186, 44);
+    padding: 5px;
+    color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    display: inline-block;
 }
 
