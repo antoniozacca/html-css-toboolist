@@ -64,12 +64,13 @@ createApp({
                 this.elementoDaAggiungere = " ";
             }
         },
+        
+        deleteDatiFalse(index){
+            this.todo.splice(index, 1)
+        },
         cambiaDoneTrue(index){
             this.todo[index].done = false
 
-            },
-            deleteDatiFalse(index){
-                this.todo.splice(index, 1)
             },
             cambiaDoneFalse(index){
                 this.todo[index].done = true
