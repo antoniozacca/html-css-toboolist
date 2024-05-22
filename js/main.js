@@ -48,17 +48,11 @@ createApp({
                     fonte: "Editorial"
                  },
             ],
-            selectedIndex: 0
         };
     },
     methods: {
-        select(index){
-            this.selectedIndex = index;
-        },
-        addClass(dati){
-            return {
-                
-            }
+        deleteDati(index){
+            this.todo.splice(index, 1)
         }
     }
 }).mount("#app");

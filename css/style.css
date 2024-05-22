@@ -115,3 +115,6 @@ body{
     text-decoration: line-through;
     color: green;
 }
+.d-none{
+    display: none;
+}
