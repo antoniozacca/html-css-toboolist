@@ -25,9 +25,8 @@
                 <div class="container2">
                     <ul>
                         <li  v-for="(dati, index) in todo" :key="index">
-                            <span v-if="dati.done === true">&check;</span>
-                            <span v-else="dati.done === false">&#10060</span>
-                             {{ dati.text }} {{ dati.fonte }}</li>
+                            <span v-if="dati.done === true" class="fatto">&check;{{ dati.text }} {{ dati.fonte }}</span>
+                            <span v-else="dati.done === false">&#10060{{ dati.text }} {{ dati.fonte }}</span></li>
                     </ul>
                 </div>
             </div>

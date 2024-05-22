@@ -111,3 +111,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+.fatto{
+    text-decoration: line-through;
+    color: green;
+}
