@@ -29,6 +29,11 @@
                             <span v-else="dati.done === false">&#10060{{ dati.text }} {{ dati.fonte }}</span>
                             <button @click="deleteDati(index)">X</button>
                         </li>
+                        <li>
+                            <input v-model="elementoDaAggiungere" type="text"> <button @click="addDati">Aggiungi</button>
+                        </li>
+                        <li>
+                        </li>
                     </ul>
                 </div>
             </div>

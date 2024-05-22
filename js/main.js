@@ -30,7 +30,7 @@ createApp({
                  },
                  {
                     text:  "Schedule meeting with Alex",
-                    done: false,
+                    done: false
                  },
                  {
                     text:  "Homepage refresh",
@@ -48,11 +48,22 @@ createApp({
                     fonte: "Editorial"
                  },
             ],
+            elementoDaAggiungere: " ",
         };
     },
     methods: {
         deleteDati(index){
             this.todo.splice(index, 1)
+        },
+        addDati(){
+            if (this.elementoDaAggiungere !== " ") {
+                this.todo.push({
+                    text: this.elementoDaAggiungere,
+                    done: false
+                })
+                this.elementoDaAggiungere = " ";
+            }
         }
+        
     }
 }).mount("#app");
