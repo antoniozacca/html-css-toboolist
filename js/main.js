@@ -63,7 +63,19 @@ createApp({
                 })
                 this.elementoDaAggiungere = " ";
             }
+        },
+        cambiaDoneTrue(index){
+            this.todo[index].done = false
+
+            },
+            deleteDatiFalse(index){
+                this.todo.splice(index, 1)
+            },
+            cambiaDoneFalse(index){
+                this.todo[index].done = true
+    
+                }
         }
         
     }
-}).mount("#app");
+).mount("#app");

@@ -25,14 +25,12 @@
                 <div class="container2">
                     <ul>
                         <li  v-for="(dati, index) in todo" :key="index">
-                            <span v-if="dati.done === true" class="fatto">&check;{{ dati.text }} {{ dati.fonte }}</span>
-                            <span v-else="dati.done === false">&#10060{{ dati.text }} {{ dati.fonte }}</span>
-                            <button @click="deleteDati(index)">X</button>
+                            <span @click="cambiaDoneTrue(index)" v-if="dati.done === true" class="fatto">&check;{{ dati.text }} {{ dati.fonte }}</span>
+                            <span @click="cambiaDoneFalse(index)" v-else="dati.done === false">&#10060{{ dati.text }} {{ dati.fonte }}</span>
+                            <button @click="deleteDatiFalse(index)">X</button>
                         </li>
                         <li>
                             <input v-model="elementoDaAggiungere" type="text"> <button @click="addDati">Aggiungi</button>
-                        </li>
-                        <li>
                         </li>
                     </ul>
                 </div>
